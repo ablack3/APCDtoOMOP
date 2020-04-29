@@ -1,0 +1,1 @@
+Download the full replacement NPPES NPI table from https://download.cms.gov/nppes/NPI_Files.html and put the result here.

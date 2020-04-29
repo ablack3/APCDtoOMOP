@@ -1,0 +1,51 @@
+/***********************
+params: database
+***********************/
+
+--Select database
+USE @database@;
+GO
+
+
+--Drop raw.pe table
+IF(OBJECT_ID('raw.pe') IS NOT NULL)
+  BEGIN
+    DROP TABLE raw.pe;
+  END
+;
+GO
+
+--Create raw.pe table
+IF(OBJECT_ID('raw.pe') IS NULL)
+  BEGIN
+    CREATE TABLE raw.pe (
+      	PE004_YEAR VARCHAR(10)
+      	,PE005_MONTH VARCHAR(5)
+      	,PE007_XPLAN VARCHAR(5)
+      	,PE013_GENDER VARCHAR(10)
+      	,PE015_PATCITY VARCHAR(50)
+      	,PE016_PATST VARCHAR(5)
+      	,PE017_PATZIP VARCHAR(20)
+      	,PE018_MEDICAL VARCHAR(5)
+      	,PE019_RX VARCHAR(5)
+      	,PE020_DENTAL VARCHAR(5)
+      	,PE028_PRIMARY VARCHAR(5)
+      	,PE029_COVERAGE VARCHAR(5)
+      	,PE030_MARKET VARCHAR(5)
+      	,PE899_RECTYPE VARCHAR(5)
+      	,PE901_AGE VARCHAR(5)
+      	,PE902_IDN VARCHAR(25)
+      	,PE905_MEDICARE VARCHAR(5)
+      	,PE906_FILEID VARCHAR(25)
+      	,PE907_MHDO_SUBSSN VARCHAR(300)
+      	,PE908_MHDO_CONTRACT VARCHAR(300)
+      	,PE909_MHDO_MEMSSN VARCHAR(300)
+      	,PE910_MHDO_MEMBERID VARCHAR(300)
+      	,PE911_MHDO_REL VARCHAR(5)
+      	,PE912_MHDO_PRODUCT VARCHAR(5)
+      	,PE913_DUP VARCHAR(5)
+      	,PE914_MTIME VARCHAR(10)
+      	,PE955_COUNTY_FIPS VARCHAR(10)
+    );
+  END
+;

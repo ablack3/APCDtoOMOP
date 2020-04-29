@@ -1,0 +1,26 @@
+Package: APCDtoOMOP
+Title: Map the Maine All Payer Claims Data to the OMOP Common Data Model
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Adam",
+           family = "Black",
+           role = c("aut", "cre"),
+           email = "awblack@mmc.org",
+           comment = c(ORCID = "https://orcid.org/0000-0001-5576-8701"))
+    person(given = "David",
+           family = "Denton",
+           role = c("aut", "cre"),
+           email = "dldenton@mmc.org")
+Description: 
+  This package contains all the code necessary to map the Maine All Payer Claims Data to the OMOP Common Data Model. 
+  It was developed on four years of data 2015 to 2018. 
+  The transformation logic is written in SQL and developed for SQL server. 
+  R is used to orchestrate the ETL, trigger the SQL scripts in order, and log important ETL events.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1

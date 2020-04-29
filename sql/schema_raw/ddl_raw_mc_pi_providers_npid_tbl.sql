@@ -1,0 +1,46 @@
+/***********************
+params: database
+***********************/
+
+--Select database
+USE @database@;
+GO
+
+
+--Drop raw.mc_pi_providers_npid table
+IF(OBJECT_ID('raw.mc_pi_providers_npid') IS NOT NULL)
+  BEGIN
+    DROP TABLE raw.mc_pi_providers_npid;
+  END
+;
+GO
+
+--Create raw.mc_pi_providers_npid table
+IF(OBJECT_ID('raw.mc_pi_providers_npid') IS NULL)
+  BEGIN
+    CREATE TABLE raw.mc_pi_providers_npid (
+      MCSP001_PRVIDN VARCHAR(20)
+      ,MCSP006_PRVFNAME VARCHAR(50)
+      ,MCSP007_PRVMNAME VARCHAR(50)
+      ,MCSP008_PRVLNAME VARCHAR(100)
+      ,MCSP009_PRVSUFFIX VARCHAR(20)
+      ,MCSP010_PRVSPEC VARCHAR(40)
+      ,MCSP011_PRVCITY VARCHAR(50)
+      ,MCSP012_PRVST VARCHAR(5)
+      ,MCSP013_PRVZIP VARCHAR(20)
+      ,MCSP014_DPCID VARCHAR(20)
+      ,MCSP015_TAXONOMY VARCHAR(20)
+      ,MCSP018_NPI VARCHAR(40)
+      ,MCSP020_PRVCOUNTRY VARCHAR(50)
+      ,MCSP021_SRVFACLOCNAME VARCHAR(150)
+      ,MCSP022_SRVFACNPI VARCHAR(40)
+      ,MCSP023_SRVFACLOCADD1 VARCHAR(150)
+      ,MCSP024_SRVFACLOCADD2 VARCHAR(150)
+      ,MCSP025_SRVFACLOCCITY VARCHAR(50)
+      ,MCSP026_SRVFACLOCST VARCHAR(5)
+      ,MCSP027R_SRVFACLOCZIP_FULL VARCHAR(20)
+      ,MCSP027_SRVFACLOCZIP VARCHAR(10)
+      ,MCSP028_SRVFACNUM VARCHAR(50)
+    );
+  END
+;

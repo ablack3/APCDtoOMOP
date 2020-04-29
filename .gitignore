@@ -1,0 +1,23 @@
+### R ###
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# User-specific files
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
+
+# SSIS packages
+/ssis/**
+.Rproj.user
+
+# not sure what .vs directory is
+.vs
+inst/doc
+
+run_logs/*

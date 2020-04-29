@@ -1,0 +1,1 @@
+Download the free US zipcode data from https://simplemaps.com/data/us-zips and put the .csv file here.
