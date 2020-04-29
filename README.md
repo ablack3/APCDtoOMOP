@@ -1,6 +1,6 @@
 ## APCD to OMOP  
 
-Adam Black, David Denton, Tega Dibie, Tom Merrill
+Adam Black, David Denton, Tega Dibie, Tom Merrill, Katherine Ahrens, Ph.D
 
 This repo contains the ETL code for transforming Epic-Caboodle EHR data into the OMOP common data model. 
 
