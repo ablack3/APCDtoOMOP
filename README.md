@@ -2,10 +2,12 @@
 
 Adam Black, David Denton, Tega Dibie, Tom Merrill, Katherine Ahrens, Ph.D
 
-This repo contains the ETL code for transforming Epic-Caboodle EHR data into the OMOP common data model. 
+This repo contains the ETL code for transforming the Maine All Payer Claim Data into the OMOP common data model. This repository is an R package.
 
-**/data** - Data sources used in the APCD to OMOP transformation process.  
-**/R** - R functions, ETL scripts, and a development folder for work in progress.  
-**/reference** - Reference documentation for the project.  
+**/R** - R functions used in the ETL execution
+**/data** - External data sources used in the APCD to OMOP transformation process (need to be added by user) 
+**/docs** - Documentation for the project
+**/exec** - R scripts that execute the ETL 
 **/sql** - SQL scripts that define specific ETL processes.  
+
 
