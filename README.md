@@ -1,6 +1,6 @@
 ## Transforming Maine’s All Payer Claims Database to an internationally used common data model to support collaborative research
 
-*Adam Black, Dave Denton, Maine Medical Center Research Institute; Tega Dibie, Tom Merrill, Katherine Ahrens, Ph.D University of Southern Maine*
+*Adam Black, Dave Denton, Maine Medical Center Research Institute; Tega Dibie, Tom Merrill, Katherine Ahrens, University of Southern Maine*
 
 
 This repository contains the ETL code for transforming the Maine All Payer Claim Data into the OMOP common data model. This repository is an R package.
